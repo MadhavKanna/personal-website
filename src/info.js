@@ -223,5 +223,5 @@ export const info = {
         }
 
     ], 
-    resumeLink: "https://drive.google.com/file/d/1jilDEbKNacT-WkhgXIJyMvffirh_V4XT/view?usp=sharing"
+    resumeLink: "https://docs.google.com/document/d/1yqsOuOKcYpK1xsiuEJd_TztyriSe4hT8/edit?usp=sharing&ouid=112327071387638462237&rtpof=true&sd=true"
 }

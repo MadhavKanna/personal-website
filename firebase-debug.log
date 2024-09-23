@@ -1,0 +1,48 @@
+[debug] [2024-09-23T23:20:14.602Z] ----------------------------------------------------------------------
+[debug] [2024-09-23T23:20:14.605Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\madha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-23T23:20:14.605Z] CLI Version:   13.19.0
+[debug] [2024-09-23T23:20:14.605Z] Platform:      win32
+[debug] [2024-09-23T23:20:14.605Z] Node Version:  v20.12.2
+[debug] [2024-09-23T23:20:14.605Z] Time:          Mon Sep 23 2024 19:20:14 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-23T23:20:14.606Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-23T23:20:14.676Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-23T23:20:14.676Z] > authorizing via signed-in user (madhavkanna3141@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\madha\Desktop\projects\personal-website
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-23T23:20:28.589Z] Using project from CLI flag: website-personal-1234
+[debug] [2024-09-23T23:20:28.591Z] > refreshing access token with scopes: []
+[debug] [2024-09-23T23:20:28.592Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-23T23:20:28.592Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-23T23:20:28.724Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-09-23T23:20:28.724Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-23T23:20:28.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/website-personal-1234 [none]
+[debug] [2024-09-23T23:20:28.836Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/website-personal-1234 401
+[debug] [2024-09-23T23:20:28.836Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/website-personal-1234 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-09-23T23:20:28.837Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-09-23T23:20:28.916Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\madha\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\madha\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project website-personal-1234. Please make sure the project exists and your account has permission to access it.

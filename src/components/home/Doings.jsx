@@ -8,11 +8,11 @@ function createList(listItem) {
 
 function createLogo(logo) {
     return (
-        <div>
         <div data-bs-toggle="tooltip" data-bs-placement="top" title={logo[0]} key={logo}>
             <i className={"doing-logo fa-5x fa-brands " + logo[1]} key={logo} />
         </div>
-        </div>
+
+
     )
 }
 function createCard(item) {
